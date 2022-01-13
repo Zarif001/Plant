@@ -1,21 +1,20 @@
 footer.footer 
-    .footer__content 
-        .footer__content-info 
-            .footer__info
-                img(src="./images/logo.webp" alt="")
-                h2.footer__info-title LA PERLE
-                h5.footer__info-describe French gourmet  
-            .footer__emblems 
-                img(src="./images/meta.svg", alt="")
-                img(src="./images/insta.svg", alt="").footer__emblems-img
-                img(src="./images/tg.svg", alt="")
-            .footer__contact   
-                h5.footer__contact-title CONTACT
-                p.footer__contact-numbers (302) 555-0107
-                p.footer__contact-numbers (239) 555-0108
-                p.footer__contact-numbers laperle.com
-            .footer__location  
-                h4.footer__location-title LOCATION 
-                p.footer__location-addres 1901 Thornridge Cir. Shiloh, Hawaii 81063
-        .footer__content-map 
-            <iframe class="footer__content-img" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2999.0131410120343!2d69.19794851538238!3d41.26504977927561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8a1b0c46af65%3A0x82d1d0a1630a1413!2zUFJPV0VCIC0g0YPRh9C10LHQvdGL0Lkg0YbQtdC90YLRgCDQsiDQotCw0YjQutC10L3RgtC1LiDQmtGD0YDRgdGLINCf0YDQvtCz0YDQsNC80LzQuNGA0L7QstCw0L3QuNGPLCDQnNCw0YDQutC10YLQuNC90LMg0LggU01NLCDQlNC40LfQsNC50L0g0LggM0Qt0LPRgNCw0YTQuNC60LAu!5e0!3m2!1sru!2s!4v1638085371172!5m2!1sru!2s" style="border:0;" allowfullscreen="" loading="lazy"></iframe> 
+    .footer__content
+        .footer__content-item
+            h4.footer__content-title plantku
+            h6.footer__content-house Plantku House
+            p.footer__content-describe Jl. Laksda Adisucipto No.51, Demangan, Kec. Depok, Kota Yogyakarta, Daerah Istimewa Yogyakarta 55282
+        .footer__content-item 
+            h5.footer__content-caption Perusahaan
+            h6.footer__content-text Tentang Kami
+            h6.footer__content-text Hubungi Kami
+        .footer__content-item 
+            h5.footer__content-caption Produk
+            h6.footer__content-text Tanaman
+            h6.footer__content-text Tanaman Lain
+        .footer__content-item
+            h5.footer__content-email Berlangganan Email Kami
+            form(action="").footer__content-form
+                input(type="email" placeholder="Masukan Alamat Email" required = "").footer__content-input 
+                button(type="submit").footer__content-button Submit
+

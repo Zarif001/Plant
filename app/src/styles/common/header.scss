@@ -1,94 +1,125 @@
-.header{
-&__content{
-  background: url('../images/header-bg.webp') no-repeat center center /cover;
-  height: 100vh;
-  &-picture{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-&-info{
-  position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-}
-&-about{
+.header {
+    &__content {
         display: flex;
-        justify-content: space-between;
-        margin: 50px 50px 0 50px;
         align-items: center;
-}
-}
-&__info{  
-  position: absolute;
-  height: 100%;
-  background: white;
-  top: 0;
-  width: 290px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  left: -290px;
-  transition: 0.5s;
-  padding-top: 22px;
-  &.active{
-    left: 0;
-  }
-    &-text{
-        color: $white;
-          border: 1px solid $white;
-          padding: 15px 90px;
-          display: inline-block;
-          cursor: pointer;
-  }
-  &-title{
-    color:$header-color;
-    font-size: 42px;
-    line-height: 42px;
-    margin-top: 15px;
-    font-family: 'TimesNewRomanRegular';
-    font-weight: 500;
-  }
-  &-title::after{
-      display: block;
-      content: '';
-      width: 190px;
-height: 2px;
-background: $header-color;
-margin: 10px 0;
-  }
-  &-describe{
-    color: #4C4845;
-    font-size: 18px;
-line-height: 24px;
-font-family: 'PlayfairDisplay-Italic';
-margin-bottom: 53px;
-font-weight: 400;
-  }
-  &-link{
-      color: $black;
-      font-size: 20px;
-      line-height: 55px;
-      font-family: 'PlayfairDisplay-Regular';
-      font-weight: 400;
-      
-  }
-  &-emblems{
-    width: 50%;
-    margin-top: 50px;
-  }
-  &-language{
-    color: $header-color;
-    font-family: 'TimesNewRomanRegular';
-    font-size: 20px;
-    line-height: 20px;
-    margin: 45px 0;
-  }
-  
-}
-&__emblems-img{
-  margin: 0px 20px ;
-}
+
+        &-nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            margin-top: 60px;
+        }
+
+        &-prenav {
+            display: flex;
+            align-items: center;
+            margin-right: 56px;
+        }
+
+        &-text {
+            margin-left: 56px
+        }
+
+        &-signUp {
+            font-size: 14px;
+            line-height: 20px;
+            color: $green;
+            font-family: 'Nunito-Bold';
+            margin-left: 30px;
+            border: none;
+            background: $white;
+            cursor: pointer;
+        }
+
+        &-signIn {
+            font-size: 14px;
+            line-height: 20px;
+            color: $white;
+            font-family: 'Nunito-Bold';
+            margin-left: 30px;
+            background: #156963;
+            padding: 8px 32.5px;
+            border: none;
+            cursor: pointer;
+        }
+
+        &-cart {
+            margin-left: 45px;
+        }
+
+        &-about {
+            margin-left: 77px;
+        }
+
+        &-title {
+            font-size: 68px;
+            line-height: 83px;
+            color: $green;
+            font-family: 'Montserrat-Medium';
+            max-width: 523px;
+            width: 100%;
+            margin-bottom: 23px;
+        }
+
+        &-describe {
+            font-size: 18px;
+            line-height: 32px;
+            color: $semiblack;
+            font-family: 'Montserrat-Regular';
+            margin-bottom: 110px;
+            max-width: 490px;
+            width: 100%;
+        }
+
+        &-last {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        &-button {
+            display: flex;
+            align-items: center;
+            padding-top: 40px;
+            margin-bottom: 14px;
+
+        }
+        &-kaktus {
+            font-size: 24px;    
+            line-height: 29px;
+            color: $gray;
+            font-family: 'Montserrat-Medium';
+            margin-left: 13px;
+
+        }
+
+        &-kaktus:nth-child(1) {
+            margin-right: 13px;
+            margin-left: 0px;
+            color: #F2F2F2;
+        }
+
+        &-rahasia {
+            font-size: 32px;
+            line-height: 39px;
+            color: $green;
+            font-family: 'Montserrat-Medium';
+        }
+        &-buttons:nth-child(2){
+            background: $green;
+            padding: 0px 49px ;
+        }
+        &-buttons{
+            cursor: pointer;
+        }
+        &-plant{
+            font-size: 32px;
+            line-height: 39px;
+            color: $white;
+            font-family: 'Montserrat-Medium';
+            padding-bottom: 38px;
+        }
+    }
 }

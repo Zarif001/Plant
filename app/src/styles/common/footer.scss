@@ -1,87 +1,93 @@
-.footer{
-    &__content{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        &-img{
-            width: 100%;
-            height: 100%;
-        }
-        &-info{
-            display: flex;
-            justify-content: space-around;
-        }
+.footer {
+    &::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: #156963;
+        margin-top: 80px;
+        margin-bottom: 60px;
     }
-    &__info{
+
+    &__content {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        &-describe{
-            color: #4C4845;
-            font-size: 18px;
-        line-height: 24px;
-        font-family: 'PlayfairDisplay-Italic';
-        margin-bottom: 53px;
-        font-weight: 400;
+        justify-content: space-evenly;
+
+        &-title {
+            font-size: 24px;
+            line-height: 24px;
+            text-transform: uppercase;
+            color: $green;
+            font-family: 'Poppins-Medium';
+            margin-bottom: 24px;
         }
-        &-title{
-            color:$header-color;
-            font-size: 42px;
-            line-height: 42px;
-            margin-top: 15px;
-            font-family: 'TimesNewRomanRegular';
-            font-weight: 500;
+
+        &-house {
+            font-size: 16px;
+            line-height: 19px;
+            color: #333333;
+            font-family: 'WorkSans-Medium';
+            margin-bottom: 10px;
         }
-        &-title::after{
-            display: block;
-            content: '';
-            width: 190px;
-      height: 2px;
-      background: $header-color;
-      margin: 10px 0;
+
+        &-describe {
+            font-size: 13px;
+            line-height: 20px;
+            color: #4F4F4F;
+            max-width: 242px;
+            width: 100%;
+            margin-bottom: 71px;
         }
+
+        &-caption {
+            font-size: 16px;
+            line-height: 16px;
+            color: $black;
+            font-family: 'WorkSans-Medium';
+            margin-bottom: 20px;
         }
-        &__emblems{
+
+        &-text {
+            font-size: 14px;
+            line-height: 16px;
+            color: $black;
+            font-family: 'WorkSans-Regular';
+            margin-bottom: 14px;
+        }
+
+        &-email {
+            font-size: 16px;
+            line-height: 16px;
+            font-family: 'WorkSans-Medium';
+            color: $black;
+            margin-bottom: 14px;
+        }
+
+        &-form {
             display: flex;
             flex-direction: column;
-            &-img{
-                margin: 25px 0 ;
-            }
         }
-        &__contact{
-            &-title{
-                margin-bottom: 20px;
-                font-size: 20px;
-                line-height: 25px;
-                color: $black;
-                font-family: 'PlayfairDisplay-Regular';
-                font-weight: 400;
-            }
-            &-numbers{
-                font-size: 16px;
-                line-height: 20px;
-                color: $black;
-                font-family: 'PlayfairDisplay-Regular';
-                font-weight: 400;
-                margin-bottom: 10px;
+
+        &-input {
+            color: $black;
+            font-size: 12px;
+            line-height: 16px;
+            font-family: 'WorkSans-Regular';
+            border-radius: 2px;
+            border: 1px solid #F2F2F2;
+            padding: 8px 87px 8px 13px;
+            margin-bottom: 14px;
+        }
+
+        &-button {
+            font-size: 8px;
+            line-height: 14px;
+            color: $white;
+            font-family: 'Raleway-regular';
+            background: $green;
+            padding: 4px 12px;
+            border: none;
+            width: 51px;
         }
     }
-        &__location{
-            &-title{
-                margin-bottom: 20px;
-                font-size: 20px;
-                line-height: 25px;
-                color: $black;
-                font-family: 'PlayfairDisplay-Regular';
-                font-weight: 400;
-            }
-            &-addres{
-                font-size: 16px;
-                line-height: 20px;
-                color: $black;
-                font-family: 'PlayfairDisplay-Regular';
-                font-weight: 400;
-
-            }
-            }
-
-        }
+}

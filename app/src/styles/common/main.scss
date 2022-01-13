@@ -1,313 +1,107 @@
 .main {
-  &__items {
-    &-menu {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+    &__content {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 140px;
+
+        &-item {
+            max-width: 268px;
+            width: 100%;
+            border: 1px solid #E0E0E0;
+            padding: 21px 16px;
+        }
+
+        &-picture {
+            display: flex;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+
+        &-title {
+            margin-left: 16px;
+            font-size: 16px;
+            line-height: 24px;
+            color: $green;
+            font-family: 'Montserrat-Bold';
+        }
+
+        &-describe {
+            font-size: 14px;
+            line-height: 16px;
+            color: $semiblack;
+            font-family: 'Montserrat-Regular';
+        }
     }
 
-    &-us {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+    // About
+    &__about {
+        margin-top: 250px;
+        display: flex;
+        justify-content: space-between;
+
+        &-plant {
+            margin-left: 79px;
+        }
+
+        &-picture {
+            margin-right: 57px;
+        }
+
+        &-title {
+            font-size: 40px;
+            line-height: 56px;
+            color: $semiblack;
+            font-family: 'Montserrat-Bold';
+            margin-bottom: 16px;
+            max-width: 522px;
+            width: 100%;
+        }
+
+        &-describe {
+            font-size: 16px;
+            line-height: 28px;
+            color: $semiblack;
+            font-family: 'Montserrat-Regular';
+            max-width: 507px;
+            width: 100%;
+            margin-bottom: 23px;
+        }
+
+        &-img {
+            width: 100%;
+        }
     }
 
+    // Shop 
+    &__shop {
+        margin-top: 80px;
+        display: flex;
+        justify-content: center;
+        &-title {
+            font-size: 40px;
+            line-height: 56px;
+            color: $semiblack;
+            font-family: 'Montserrat-Bold';
+            margin-bottom: 32px;
+            max-width: 585px;
+            width: 100%;
+        }
 
-    &-events {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      &_2{
-        display: none;
-      }
+        &-btn {
+            font-size: 14px;
+            line-height: 20px;
+            color: #FAFEFE;
+            font-family: 'Nunito-Bold';
+            padding: 10px 42px ;
+            background: $green;
+            border: 1px solid #156963;
+        }
+
+        &-rectangle {
+            width: 480px;
+            background: #F3F4F6;
+            height: 360px;
+
+        }
     }
-
-    &-img {
-      width: 100%;
-    }
-
-    &-btn {
-      padding: 13px 99px;
-      display: block;
-      border: 1px solid $black;
-      font-size: 18px;
-      line-height: 24px;
-      color: $black;
-      font-family: "PlayfairDisplay-Regular";
-      max-width: 303px;
-      width: 100%;
-    }
-
-    &-title {
-      font-size: 48px;
-      line-height: 55px;
-      color: $black;
-      font-family: "PlayfairDisplay-Regular";
-      font-weight: 400;
-      padding: 50px 0 30px 0;
-    }
-
-    &-describe {
-      font-size: 20px;
-      line-height: 45px;
-      color: $black;
-      max-width: 730px;
-      width: 100%;
-    }
-  }
-
-  &__menu-about,
-  &__event-about,
-  &__us-about {
-    background: #e5e5e5;
-    padding-left: 50px;
-  }
-
-  &__event-about {
-    padding-left: 0;
-    padding-right: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    text-align: right;
-  }
-
-  &__section-theme {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  &__theme {
-    &-first {
-      position: relative;
-      display: flex;
-      justify-content: center;
-    }
-
-    &-forText {
-      position: absolute;
-      top: 0;
-    }
-
-    &-title {
-      font-size: 48px;
-      line-height: 50px;
-      color: $white;
-      margin-top: 50px;
-      font-family: "PlayfairDisplay-Regular";
-      font-weight: 400;
-
-      &.tit {
-        color: $black;
-        // margin-left: 50px;
-      }
-    }
-
-    &-img {
-      width: 100%;
-    }
-  }
-
-  &__section-record {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  &__right {
-    display: flex;
-    padding: 150px 20px;
-
-    &-input {
-      border: none;
-      border-bottom: 1px #838383 solid;
-      width: 370px;
-      margin-right: 50px;
-      margin-bottom: 50px;
-      font-size: 18px;
-      line-height: 21px;
-      font-family: "PlayfairDisplay-Regular";
-      font-weight: 400;
-      outline: none;
-    }
-
-    &-monday {
-      font-size: 18px;
-      line-height: 21px;
-      color: $black;
-      font-family: "PlayfairDisplay-Regular";
-      font-weight: 400; 
-    }
-
-    &-btn {
-      color: $black;
-      border: 1px solid $black;
-      padding: 15px 90px;
-      display: inline-block;
-      cursor: pointer;
-      background: $white;
-      font-family: "PlayfairDisplay-Regular";
-      font-weight: 400;
-    }
-
-    &-weeks {
-      display: flex;
-      align-items: center;
-    }
-  }
-
-  &__left {
-    background: #e5e5e5;
-    padding-left: 50px;
-
-    &-title {
-      font-size: 48px;
-      line-height: 55px;
-      font-family: "PlayfairDisplay-Regular";
-      font-weight: 400;
-      color: $black;
-      margin-top: 50px;
-    }
-
-    &-describtion {
-      color: $black;
-      font-size: 20px;
-      line-height: 45px;
-      font-family: "PlayfairDisplay-Regular";
-      font-weight: 400;
-      max-width: 730px;
-      width: 100%;
-      margin-top: 30px;
-    }
-
-    &-describe {
-      font-size: 20px;
-      line-height: 45px;
-      color: $black;
-      max-width: 730px;
-      width: 100%;
-      margin-top: 50px;
-      font-family: "PlayfairDisplay-Regular";
-      font-weight: 400;
-    }
-  }
-
-  // SecondIndex.pug
-  &__kitchen {
-    display: flex;
-    width: 100%;
-
-    &-title {
-      font-size: 48px;
-      line-height: 50px;
-      color: $white;
-      font-family: "PlayfairDisplay-Regular";
-      font-weight: 400;
-      margin-top: 50px;
-    }
-
-    &-btn {
-      display: block;
-      color: $white;
-      font-family: "PlayfairDisplay-Regular";
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 24px;
-      border: 1px solid $white;
-      padding: 13px 0;
-      margin-bottom: 50px;
-      padding: 13px 124px;
-    }
-
-    &-picture {
-      background: url('../images/about-picture_1.webp');
-      transition: 1s;
-      width: 480px;
-      height: 80vh;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      display: flex;
-      justify-content: center;
-    }
-
-    &-about {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      opacity: 0;
-    }
-
-    &-picture:nth-of-type(2) {
-      background: url('../images/about-picture_2.webp');
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-
-    }
-
-    &-picture:nth-of-type(3) {
-      background: url('../images/about-picture_3.webp');
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-
-    &-picture:nth-of-type(4) {
-      background: url('../images/about-picture_4.webp');
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;  
-    }
-
-    &-picture.active {
-      width: 600px;
-    }
-
-    &-picture.active &-about {
-      opacity: 1;
-    }
-  }
-
-  // ThirdIndex.pug
-  &__menu {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    &-all{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-    &-title {
-      font-size: 48px;
-      line-height: 50px;
-      font-family: "PlayfairDisplay-Regular";
-      font-weight: 400;
-      color: $black;
-      margin-bottom: 30px;
-      
-    }
-    &-allMenu{
-      max-width: 763px;
-      width: 100%;
-    }
-    &-first {
-      margin-bottom: 30px;
-    }
-
-    &-text {
-      color: $black;
-      font-size: 20px;
-      line-height: 24px;
-      font-family: "PlayfairDisplay-Regular";
-      font-weight: 400;
-    }
-
-    &-describe {
-      font-size: 18px;
-      line-height: 24px;
-      color: $black;
-      font-family: "PlayfairDisplay-Regular";
-      font-weight: 400;
-
-    }
-  }
 }

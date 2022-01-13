@@ -1,18 +1,26 @@
 $white:#fff;
 $black:#000;
-$header-color:#B38934;
-$main-color: #838383;
-$fonts:('PlayfairDisplay-Italic', 500),
-('PlayfairDisplay-Regular', 400),
-('TimesNewRomanRegular',400);
+$semiblack:#2C1500;
+$green:#156963;
+$gray:#333333;
+$fonts:('Montserrat-Bold', 700),
+('Montserrat-Medium', 500),
+('Montserrat-Regular',400),
+('Montserrat-SemiBold' 600),
+('Nunito-Bold', 700),
+('Nunito-Black', 900),
+('Poppins-Medium', 500),
+('Raleway-Medium', 500), 
+('WorkSans-Medium', 500),
+('WorkSans-Regular', 400);
  @each $name, $weight in $fonts {
      @font-face {
          font-family: $name;
          src: url('../fonts/#{$name}.ttf');
          font-weight: $weight;
      }
- } 
- 
+ }
+
  *{
     margin: 0;
     padding: 0;
@@ -20,4 +28,4 @@ $fonts:('PlayfairDisplay-Italic', 500),
     text-decoration: none;
     list-style: none;
  }
- 
+
