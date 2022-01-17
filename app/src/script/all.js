@@ -75,4 +75,4 @@ if(screen.matches){
 } else {
     setInterval(nextSlide, 2000)
 }
-
+    

@@ -17,14 +17,6 @@
             }
         }
     }
-    .main{
-        &__about{
-            &-plant, &-picture{
-                margin-left: 0px;
-                margin-right: 0px;
-            }
-        }
-    }
 }
 @media(max-width:980px){
     .header{
@@ -53,13 +45,16 @@
         }
     }
     .main{
-        &__content{
+        &__content, &__carts-content{
             flex-wrap: wrap;
         }
         &__about{
             &-picture{
                 display: flex;
             }
+        }
+        &__carts-item{
+            margin-right: 8px;
         }
     }
 }
@@ -76,7 +71,7 @@
                margin-bottom: 30px;     
             }
             &-next, &-prev{
-                padding: 0px;
+                padding: 10px;
             }
             &-plant, &-rahasia{
                 font-size: 25px;
@@ -111,4 +106,23 @@
             justify-content: space-between;
         }
     }
+}
+@media(max-width:550px){
+.main{
+    &__content{
+        justify-content: center;
+    }
+    &__carts{
+        &-content{
+            justify-content: center;
+        }
+    }
+    &__about-title{
+        font-size: 30px;
+        line-height: 50px;
+    }
+    &__shop-title{
+        font-size: 20px;
+    }
+}
 }
