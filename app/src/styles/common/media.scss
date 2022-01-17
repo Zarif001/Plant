@@ -34,6 +34,9 @@
                left: -400px;
                width: 53%;
             }
+            &-prenav{
+                margin-right: 0px;
+            }
             &-burger{
                 display: block;
             }
@@ -81,6 +84,11 @@
         }
     }
     .main{
+        &__content{
+            &-item{
+                margin-bottom: 30px;
+            }
+        }
         &__about{
             &-img:nth-child(1){
                 display: none;

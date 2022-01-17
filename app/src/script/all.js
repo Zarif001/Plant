@@ -68,4 +68,11 @@ const sliderLine = document.querySelector('.header__content-picture'),
     }   
 next.addEventListener('click', nextSlide)
 prev.addEventListener('click', prevSlide)
-setInterval( nextSlide, 2000);
+
+const screen = window.matchMedia("(max-width:700px)");
+if(screen.matches){
+    clearInterval()
+} else {
+    setInterval(nextSlide, 2000)
+}
+
