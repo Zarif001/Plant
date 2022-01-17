@@ -2,30 +2,33 @@ header.header
     .header__content 
         .header__content-picture
             img.header__content-img(src="./images/background.webp" alt="")
-            .header__content-nav
+            img.header__content-img(src="./images/bg.webp" alt="")
+            img.header__content-img(src="./images/second-bg.webp" alt="")
+
+        .header__content-nav
+            a(href=""): img(src="./images/p.svg" alt="").header__content-text
+            .header__content-prenav 
                 a(href="") 
-                    img(src="./images/p.svg" alt="").header__content-text 
-                .header__content-prenav
-                    a(href="") 
-                        img(src="./images/search.svg" alt="").header__content-search
-                    a(href="") 
-                        img(src="./images/cart.svg" alt="").header__content-cart
-                    a(href="").header__content-signUp Sign Up
-                    a(href="").header__content-signIn Sign In
+                    img(src="./images/search.svg" alt="").header__content-search
+                a(href="") 
+                    img(src="./images/cart.svg" alt="").header__content-cart
+                a(href="").header__content-signUp Sign Up
+                a(href="").header__content-signIn Sign In
         .header__content-about 
             h1.header__content-title Kembang Flower Mantap
             p.header__content-describe Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
             .header__content-last 
-                .header__content-buttons
+                .header__content-prev
                     .header__content-button
                         img(src="./images/arrow-left.svg" alt="") 
                         p.header__content-kaktus Previous
                     h3.header__content-rahasia Kaktus Plant 
-                .header__content-buttons
+                .header__content-next
                     .header__content-button
                         p.header__content-kaktus Next
                         img(src="./images/arrow-right.svg" alt="") 
                     h3.header__content-plant Rahasia Plant 
+    a(href=""): img(src="./images/burger.svg", alt="").header__content-burger
 
 
 

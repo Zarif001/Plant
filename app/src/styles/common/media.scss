@@ -1,0 +1,102 @@
+
+@media(max-width:1220px){
+    .header{
+        &__content{
+            &-last{
+                grid-template-columns: none;
+            }
+            &-nav{
+                margin-top: 0;
+            }
+            &-describe{
+                margin-bottom: 30px;
+            }
+            &-title{
+                font-size: 44px;
+                line-height: 60px;
+            }
+        }
+    }
+    .main{
+        &__about{
+            &-plant, &-picture{
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+        }
+    }
+}
+@media(max-width:980px){
+    .header{
+        &__content{
+            &-nav{
+               justify-content: flex-start;
+               left: -400px;
+               width: 53%;
+            }
+            &-burger{
+                display: block;
+            }
+            &-text{
+                margin-left: 0px;
+            }
+            &-buttons{
+                padding: 20px 27px;
+            }
+              
+            &-prev, &-next{
+                padding: 15px 24px;
+            }
+        }
+    }
+    .main{
+        &__content{
+            flex-wrap: wrap;
+        }
+        &__about{
+            &-picture{
+                display: flex;
+            }
+        }
+    }
+}
+@media(max-width:700px){
+    .header{
+        &__content{
+            flex-wrap: wrap-reverse;
+            justify-content: center;
+            &-burger{
+                display: none;
+            }
+            &-last{
+               grid-template-columns: 1fr 1fr ;
+               margin-bottom: 30px;     
+            }
+            &-next, &-prev{
+                padding: 0px;
+            }
+            &-plant, &-rahasia{
+                font-size: 25px;
+            }
+        }
+    }
+    .main{
+        &__about{
+            &-img:nth-child(1){
+                display: none;
+            }
+        }
+        &__shop{
+            &-title{
+                font-size: 26px;
+                line-height: normal;
+            }
+        }
+    }
+    .footer{
+        &__content{
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+}

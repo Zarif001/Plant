@@ -1,24 +1,37 @@
 .header {
     &__content {
         display: flex;
-        align-items: center;
-
+        justify-content: space-between;
         &-nav {
             display: flex;
-            align-items: center;
-            justify-content: space-between;
-            position: absolute;
             top: 0;
+            position: absolute;
+            justify-content: space-between;
             width: 100%;
             margin-top: 60px;
         }
-
+        &-burger{
+            display: none;
+            position: absolute;
+            top: 30px;
+        }
         &-prenav {
             display: flex;
             align-items: center;
             margin-right: 56px;
         }
-
+        &-picture{
+            display: flex;
+            overflow: hidden;
+            position: relative;
+            max-width: 608px;
+            width: 100%;
+        }
+        &-about{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
         &-text {
             margin-left: 56px
         }
@@ -49,11 +62,11 @@
         &-cart {
             margin-left: 45px;
         }
-
-        &-about {
-            margin-left: 77px;
+        &-img{
+            // height: max-content;
+            max-width: 608px;
+            width: 100%;
         }
-
         &-title {
             font-size: 68px;
             line-height: 83px;
@@ -82,7 +95,6 @@
         &-button {
             display: flex;
             align-items: center;
-            padding-top: 40px;
             margin-bottom: 14px;
 
         }
@@ -107,19 +119,26 @@
             color: $green;
             font-family: 'Montserrat-Medium';
         }
-        &-buttons:nth-child(2){
+        &-next{
             background: $green;
-            padding: 0px 49px ;
-        }
-        &-buttons{
             cursor: pointer;
+            padding: 38px 40px;   
+            max-width: 320px;
+            width: 100%;
+        }
+        &-prev{
+            cursor: pointer;
+            padding: 38px 40px;   
+            max-width: 320px;
+            width: 100%;
+            
         }
         &-plant{
             font-size: 32px;
             line-height: 39px;
             color: $white;
             font-family: 'Montserrat-Medium';
-            padding-bottom: 38px;
+            
         }
     }
 }
