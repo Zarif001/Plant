@@ -17,18 +17,25 @@ burger.addEventListener('click', (e) =>{
     display:none;
     `
 })
-burgerImg.forEach(img =>{
-    img.addEventListener('click', (e) =>{
-        e.preventDefault()
-        nav.style = `
+ const burgerClick = () =>{
+     burgerImg.forEach(img => {
+         img.addEventListener('click', (e) => {
+             e.preventDefault()
+             nav.style = `
         left:-400px;
         transition: 0.5s;
         `
-        burger.style = `
+             burger.style = `
         display:block;
         `
-    })
-})
+         })
+     })
+}
+const screen = window.matchMedia("(max-width:980px)")
+if (screen.matches) {
+    burgerClick()
+}
+
 
 // Slide
 
@@ -38,7 +45,6 @@ const sliderLine = document.querySelector('.header__content-picture'),
     next = document.querySelector('.header__content-next')
 
     let position = 0
- 
 
     const nextSlide = () => {
         if(position < ((img.length - 1) * sliderLine.clientWidth)) {
@@ -65,14 +71,32 @@ const sliderLine = document.querySelector('.header__content-picture'),
             item.style.transform = `translateX(-${position}px)`
             item.style.transition = '1s'
         })
-    }   
-next.addEventListener('click', nextSlide)
-prev.addEventListener('click', prevSlide)
+    }
 
-const screen = window.matchMedia("(max-width:700px)");
-if(screen.matches){
-    clearInterval()
+let interval = setInterval(nextSlide, 2000) 
+
+next.addEventListener('click', () =>{
+    if(next){
+        nextSlide()
+        clearInterval(interval)
+    } else{
+        // interval
+    }
+})
+prev.addEventListener('click', () =>{
+    if(prev){
+        prevSlide()
+        clearInterval(interval)
+    } else{
+        interval
+    }
+})
+
+
+const screenSecond = window.matchMedia("(max-width:700px)");
+if (screenSecond.matches){
+    clearInterval(interval)
 } else {
-    setInterval(nextSlide, 2000)
+    interval
 }
     
